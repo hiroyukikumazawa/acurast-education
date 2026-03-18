@@ -14,11 +14,10 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
-  url: 'https://acurast-education.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  // Production URL (GitHub Pages)
+  url: 'https://hiroyukikumazawa.github.io',
+  // For project pages, baseUrl is '/<repo-name>/'
+  baseUrl: '/acurast-education/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
