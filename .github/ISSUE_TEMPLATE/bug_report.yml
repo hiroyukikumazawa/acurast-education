@@ -1,0 +1,44 @@
+name: Bug report
+description: Report an issue with docs/tutorials/site.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an issue. Please avoid posting secrets (mnemonics, private keys, API keys).
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - docs
+        - tutorials
+        - courses
+        - videos
+        - assets/diagrams
+        - website
+        - community
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See error ...
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: Paste relevant logs (redact secrets).
+
